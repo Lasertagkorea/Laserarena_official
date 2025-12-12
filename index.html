@@ -3,114 +3,133 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Laser Arena 지점 안내</title>
+<title>Laser Arena 전국 지점 안내</title>
 
 <style>
   body {
     margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(180deg, #0a0a0a, #1a1a1a);
-    color: #fff;
+    background: #000;
+    font-family: Arial, sans-serif;
+    color: white;
     text-align: center;
   }
-
-  .container {
-    padding: 30px 20px;
-  }
-
   h1 {
+    margin-top: 30px;
     font-size: 28px;
-    margin-bottom: 20px;
     font-weight: bold;
   }
-
-  .section-title {
+  .container {
+    max-width: 720px;
+    margin: auto;
+    padding: 20px;
+  }
+  h2 {
     margin-top: 40px;
     font-size: 22px;
     font-weight: bold;
     text-decoration: underline;
   }
-
-  .link-box {
-    margin: 14px auto;
-    width: 85%;
-    max-width: 420px;
-    padding: 16px;
-    background: rgba(255,255,255,0.12);
-    border-radius: 14px;
-    backdrop-filter: blur(5px);
-  }
-
-  .link-box a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: bold;
+  .btn {
+    position: relative;
     display: block;
+    margin: 10px auto;
+    padding: 14px 20px;
+    width: 90%;
+    max-width: 420px;
+    background: #0a0a0a;
+    color: #00caff;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+    border: 2px solid #00caff;
+    border-radius: 12px;
+    overflow: hidden;
   }
-
+  .btn::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: calc(100% + 6px);
+    height: calc(100% + 6px);
+    border-radius: 12px;
+    background: conic-gradient(
+      from 180deg,
+      #00caff,
+      transparent 20%,
+      transparent 80%,
+      #00caff
+    );
+    animation: rotateGlow 4s linear infinite reverse;
+    opacity: 0.6;
+    z-index: -1;
+  }
+  .btn::after {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background: #0a0a0a;
+    border-radius: 10px;
+    z-index: 1;
+  }
+  @keyframes rotateGlow {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
   footer {
     margin-top: 50px;
-    opacity: 0.8;
     font-size: 14px;
+    opacity: 0.8;
   }
 </style>
 </head>
 
 <body>
+
+<h1>Laser Arena 전국 지점 바로가기</h1>
 <div class="container">
 
-<h1>Laser Arena 전국 지점 안내</h1>
+  <!-- 수도권 -->
+  <h2>수도권</h2>
+  <a href="https://map.naver.com/v5/search/홍대%20레이저아레나" class="btn" target="_blank">홍대점</a>
+  <a href="https://map.naver.com/v5/search/강남%20레이저아레나" class="btn" target="_blank">강남점</a>
+  <a href="https://map.naver.com/v5/search/안양%20레이저아레나" class="btn" target="_blank">안양점</a>
+  <a href="https://map.naver.com/v5/search/안산%20레이저아레나" class="btn" target="_blank">안산점</a>
+  <a href="https://map.naver.com/v5/search/수원%20레이저아레나" class="btn" target="_blank">수원점</a>
+  <a href="https://map.naver.com/v5/search/춘천%20레이저아레나" class="btn" target="_blank">춘천점</a>
 
-<!-- 수도권 -->
-<div class="section-title">수도권</div>
+  <!-- 경상권 -->
+  <h2>경상권</h2>
+  <a href="https://map.naver.com/v5/search/경주보문%20레이저아레나" class="btn" target="_blank">경주보문점</a>
+  <a href="https://map.naver.com/v5/search/삼정타워%20레이저아레나" class="btn" target="_blank">삼정타워점</a>
+  <a href="https://map.naver.com/v5/search/부산송도%20레이저아레나" class="btn" target="_blank">부산송도점</a>
+  <a href="https://map.naver.com/v5/search/창원%20레이저아레나" class="btn" target="_blank">창원점</a>
+  <a href="https://map.naver.com/v5/search/포항%20레이저아레나" class="btn" target="_blank">포항점</a>
+  <a href="https://map.naver.com/v5/search/부산광안%20레이저아레나" class="btn" target="_blank">부산광안점</a>
+  <a href="https://map.naver.com/v5/search/대구%20레이저아레나" class="btn" target="_blank">대구점</a>
+  <a href="https://map.naver.com/v5/search/울산%20레이저아레나" class="btn" target="_blank">울산점</a>
+  <a href="https://map.naver.com/v5/search/진주%20레이저아레나" class="btn" target="_blank">진주점</a>
 
-<!-- 우선순위 지점이 위로 -->
-<div class="link-box"><a href="https://map.naver.com/v5/search/홍대%20레이저아레나" target="_blank">홍대점</a></div>
-<div class="link-box"><a href="https://map.naver.com/v5/search/강남%20레이저아레나" target="_blank">강남점</a></div>
+  <!-- 전라권 -->
+  <h2>전라권</h2>
+  <a href="https://map.naver.com/v5/search/전주한옥마을%20레이저아레나" class="btn" target="_blank">전주한옥마을점</a>
+  <a href="https://map.naver.com/v5/search/광주충장로%20레이저아레나" class="btn" target="_blank">광주충장로점</a>
+  <a href="https://map.naver.com/v5/search/여수유월드%20레이저아레나" class="btn" target="_blank">여수 유월드점</a>
 
-<!-- 일반 -->
-<div class="link-box"><a href="https://map.naver.com/v5/search/안양%20레이저아레나" target="_blank">안양점</a></div>
-<div class="link-box"><a href="https://map.naver.com/v5/search/안산%20레이저아레나" target="_blank">안산점</a></div>
-<div class="link-box"><a href="https://map.naver.com/v5/search/수원%20레이저아레나" target="_blank">수원점</a></div>
-<div class="link-box"><a href="https://map.naver.com/v5/search/춘천%20레이저아레나" target="_blank">춘천점</a></div>
+  <!-- 충청권 -->
+  <h2>충청권</h2>
+  <a href="https://map.naver.com/v5/search/대전%20레이저아레나" class="btn" target="_blank">대전점</a>
 
-<!-- 경상권 -->
-<div class="section-title">경상권</div>
+  <!-- 제주권 -->
+  <h2>제주</h2>
+  <a href="https://map.naver.com/v5/search/제주%20레이저아레나" class="btn" target="_blank">제주점</a>
 
-<!-- 우선순위 지점 -->
-<div class="link-box"><a href="https://map.naver.com/v5/search/경주보문%20레이저아레나" target="_blank">경주보문점</a></div>
-<div class="link-box"><a href="https://map.naver.com/v5/search/삼정타워%20레이저아레나" target="_blank">삼정타워점</a></div>
-<div class="link-box"><a href="https://map.naver.com/v5/search/부산송도%20레이저아레나" target="_blank">부산송도점</a></div>
-<div class="link-box"><a href="https://map.naver.com/v5/search/창원%20레이저아레나" target="_blank">창원점</a></div>
-<div class="link-box"><a href="https://map.naver.com/v5/search/포항%20레이저아레나" target="_blank">포항점</a></div>
-
-<!-- 일반 -->
-<div class="link-box"><a href="https://map.naver.com/v5/search/부산광안%20레이저아레나" target="_blank">부산광안점</a></div>
-<div class="link-box"><a href="https://map.naver.com/v5/search/대구%20레이저아레나" target="_blank">대구점</a></div>
-<div class="link-box"><a href="https://map.naver.com/v5/search/울산%20레이저아레나" target="_blank">울산점</a></div>
-<div class="link-box"><a href="https://map.naver.com/v5/search/진주%20레이저아레나" target="_blank">진주점</a></div>
-
-<!-- 전라권 -->
-<div class="section-title">전라권</div>
-<div class="link-box"><a href="https://map.naver.com/v5/search/전주한옥마을%20레이저아레나" target="_blank">전주한옥마을점</a></div>
-<div class="link-box"><a href="https://map.naver.com/v5/search/광주충장로%20레이저아레나" target="_blank">광주충장로점</a></div>
-<div class="link-box"><a href="https://map.naver.com/v5/search/여수유월드%20레이저아레나" target="_blank">여수 유월드점</a></div>
-
-<!-- 충청권 -->
-<div class="section-title">충청권</div>
-<div class="link-box"><a href="https://map.naver.com/v5/search/대전%20레이저아레나" target="_blank">대전점</a></div>
-
-<!-- 제주 -->
-<div class="section-title">제주</div>
-<div class="link-box"><a href="https://map.naver.com/v5/search/제주%20레이저아레나" target="_blank">제주점</a></div>
+</div>
 
 <footer>
-  단체 문의 및 고객센터 : 
+  단체/고객 문의 :  
   <a href="https://www.instagram.com/laserarena__official" target="_blank">@laserarena__official</a>
 </footer>
 
-</div>
 </body>
 </html>
